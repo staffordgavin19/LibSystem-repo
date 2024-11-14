@@ -28,6 +28,34 @@ header h1 {
     font-size: 2rem;
 }
 
+.sidebar {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 200px;
+    height: 33vh; /* 1/3 of screen height */
+    background-color: #800080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #660066; /* darker on hover */
+    padding: 5px;
+    border-radius: 5px;
+}
+
 nav {
     position: absolute;
     right: 20px;
