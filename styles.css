@@ -90,6 +90,13 @@ header h1 {
 
 .featured-books .book-placeholder {
     margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.featured-books .books {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .search-bar {
@@ -170,6 +177,13 @@ header h1 {
     border: 2px solid #800080;
     border-radius: 5px;
     display: block;
+    text-decoration: none;
+}
+
+.book-placeholder:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
 }
 
 nav {
