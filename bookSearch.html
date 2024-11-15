@@ -6,8 +6,7 @@
     <title>Book Search - Smart Library System</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        // Function to handle search and show results
-        function handleSearch() {
+        function handleSearch() { // Function to hide placeholders until search is made (currently not working)
             const searchInput = document.getElementById("search-input").value;
             const resultsSection = document.getElementById("search-results");
 
@@ -49,10 +48,18 @@
     </div>
 
     <div id="search-results" class="search-results">
-        <div class="book-placeholder"></div>
-        <div class="book-placeholder"></div>
-        <div class="book-placeholder"></div>
-        <div class="book-placeholder"></div>
+        <a href="bookDetail.html" class="book-link">
+            <div class="book-placeholder"></div>
+        </a>
+        <a href="bookDetail.html" class="book-link">
+            <div class="book-placeholder"></div>
+        </a>
+        <a href="bookDetail.html" class="book-link">
+            <div class="book-placeholder"></div>
+        </a>
+        <a href="bookDetail.html" class="book-link">
+            <div class="book-placeholder"></div>
+        </a>
     </div>
 </body>
 </html>
