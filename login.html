@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to handle login and show error message
+        function handleLogin(event) {
+            event.preventDefault();  // Prevent form submission
+            
+            // Get email and password values
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            
+            // Simulate error
+            const errorMessage = document.getElementById("error-message");
+            errorMessage.style.display = "block";  // Show error message
+        }
+    </script>
+</head>
+<body>
+    <!-- Purple Header -->
+    <header>
+        <h1>User Login</h1>
+    </header>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <form id="login-form" onsubmit="handleLogin(event)">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input id="password" type="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        
+        <!-- Error Message -->
+        <div id="error-message" class="error-message" style="display: none;">
+            <p>Invalid email or password. Please try again.</p>
+        </div>
+    </div>
+</body>
+</html>
