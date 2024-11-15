@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Search - Smart Library System</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to handle search and show results
+        function handleSearch() {
+            const searchInput = document.getElementById("search-input").value;
+            const resultsSection = document.getElementById("search-results");
+
+            if (searchInput.trim() !== "") {
+                resultsSection.style.display = "flex";  // Show the results section
+            } else {
+                resultsSection.style.display = "none";  // Hide the results section if input is empty
+            }
+        }
+        </script>
 </head>
 <body>
     <header>
@@ -22,6 +35,24 @@
 
     <div class="search-bar">
         <input type="text" placeholder="Search for Books, Authors, Genre...">
+    </div>
+
+    <div class="button-section">
+        <a href="404.html"><button class="quick-search-btn">Genre</button></a>
+        <a href="404.html"><button class="quick-search-btn">Author</button></a>
+        <a href="404.html"><button class="quick-search-btn">Availability</button></a>
+        <a href="404.html"><button class="quick-search-btn">Location</button></a>
+    </div>
+
+    <div class="results-separator">
+        <h3>Search Results</h3>
+    </div>
+
+    <div id="search-results" class="search-results">
+        <div class="book-placeholder"></div>
+        <div class="book-placeholder"></div>
+        <div class="book-placeholder"></div>
+        <div class="book-placeholder"></div>
     </div>
 </body>
 </html>
