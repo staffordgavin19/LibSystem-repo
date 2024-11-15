@@ -59,23 +59,37 @@ header h1 {
 .featured-books {
     margin-left: 200px;
     padding: 2rem;
-    height: 33vh;
-    width: 80%;
+    height: auto;
+    width: calc(100% - 200px);
 }
 
 .featured-books h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 .book-placeholder {
-    width: 100px;
-    height: 150px;
+    width: 150px;
+    height: 200px;
     background-color: #ddd;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 8px;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.featured-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.featured-books .book-placeholder {
+    margin-bottom: 30px;
 }
 
 nav {
