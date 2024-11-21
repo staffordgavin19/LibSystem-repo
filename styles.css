@@ -430,6 +430,31 @@ button:hover {
     background-color: #5a005a;
 }
 
+.transaction-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+    margin-left: 200px; 
+    width: calc(100% - 200px);
+    padding: 1rem;
+}
+
+.transaction-buttons button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #800080;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.transaction-buttons button:hover {
+    background-color: #5a005a; 
+}
+
 nav {
     position: absolute;
     right: 20px;
