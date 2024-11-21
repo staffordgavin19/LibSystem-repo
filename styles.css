@@ -407,6 +407,29 @@ button:hover {
     color: #777;
 }
 
+.logout-section {
+    position: fixed;
+    bottom: 20px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logout-section button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #800080;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-section button:hover {
+    background-color: #5a005a;
+}
+
 nav {
     position: absolute;
     right: 20px;
