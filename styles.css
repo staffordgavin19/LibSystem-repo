@@ -468,6 +468,28 @@ button:hover {
     color: #333;
 }
 
+.sort-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.sort-button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #800080;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+}
+
+.sort-button:hover {
+    background-color: #5a005a;
+}
+
 nav {
     position: absolute;
     right: 20px;
