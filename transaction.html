@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Purple Header -->
     <header>
         <h1>Transaction History</h1>
     </header>
 
-    <!-- Purple Sidebar -->
     <div class="sidebar">
         <a href="home.html">Home</a>
         <a href="bookSearch.html">Book Search</a>
@@ -22,7 +20,6 @@
         <a href="transaction.html">My Transactions</a>
     </div>
 
-    <!-- Transaction Buttons (All, Completed, Overdue, Pending) -->
     <div class="transaction-buttons">
         <button>All</button>
         <button>Completed</button>
@@ -30,9 +27,32 @@
         <button>Pending</button>
     </div>
 
-    <!-- Placeholder for transaction list -->
-    <div class="transaction-list">
-        <!-- Placeholder for transaction data will go here -->
+    <div class="transaction-list" id="transaction-results">
+        <p>No transactions available. Please check back later.</p>
     </div>
+
+    <script>
+        function showResults(filter) {
+            const results = document.getElementById('transaction-results');
+            let message = '';
+
+            switch (filter) {
+                case 'all':
+                    message = 'No transactions to display for All';
+                    break;
+                case 'completed':
+                    message = 'No completed transactions yet';
+                    break;
+                case 'overdue':
+                    message = 'No overdue transactions yet';
+                    break;
+                case 'pending':
+                    message = 'No pending transactions yet';
+                    break;
+            }
+
+            results.innerHTML = '<p>${message}</p>';
+        }
+    </script>
 </body>
 </html>
