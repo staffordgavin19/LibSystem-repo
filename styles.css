@@ -667,6 +667,33 @@ button:hover {
     cursor: pointer;
 }
 
+.calendar-section {
+    margin-left: 200px;
+    padding: 2rem;
+    height: auto;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.calendar-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.calendar {
+    width: 80%;
+    height: 500px;
+    border: 2px solid #800080;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 nav {
     position: absolute;
     right: 20px;
