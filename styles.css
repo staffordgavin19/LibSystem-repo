@@ -616,6 +616,21 @@ button:hover {
     background-color: #5a005a;
 }
 
+.library-map-section {
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.library-map {
+    max-width: 90%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 nav {
     position: absolute;
     right: 20px;
