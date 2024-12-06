@@ -884,6 +884,54 @@ button:hover {
     background-color: #5a005a;
 }
 
+.transactions-section {
+    margin-left: 200px;
+    padding: 2rem;
+    height: auto;
+    width: calc(100% - 200px);
+    text-align: center;
+}
+
+.transactions-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.transactions-placeholder {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    border-radius: 8px;
+    color: #555;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.transaction-buttons button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #800080;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.transaction-buttons button:hover {
+    background-color: #5a005a;
+}
+
+
 nav {
     position: absolute;
     right: 20px;
