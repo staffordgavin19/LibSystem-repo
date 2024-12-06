@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Profile - Smart Library System</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Purple Header -->
+        <header>
+            <h1>Edit Profile</h1>
+        </header>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="home.html">Home</a>
+            <a href="bookSearch.html">Book Search</a>
+            <a href="bookDetail.html">Book Details</a>
+            <a href="account.html">My Account</a>
+            <a href="admin.html">Admin</a>
+            <a href="transaction.html">My Transactions</a>
+        </div>
+
+        <!-- Edit Profile Section -->
+        <div class="edit-profile-section">
+            <h2>Edit Your Profile</h2>
+            <form class="edit-profile-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">New Password:</label>
+                    <input type="password" id="password" placeholder="Enter a new password">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Save Changes</button>
+                    <a href="account.html"><button type="button">Cancel</button></a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
